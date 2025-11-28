@@ -133,16 +133,10 @@
     transform: translateY(-3px);
   }
   
-  .missions h2 {
+  .missions h2, .fixed-missions h2 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     color: #212121; /* Preto Suave */
-  }
-  
-  .fixed-missions h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    color: #2196F3; /* Azul Vibrante */
   }
   
   .mission-card {
@@ -174,6 +168,11 @@
     cursor: pointer;
     width: 100%;
     transition: all 0.3s;
+  }
+  
+  .btn-checkin.completed {
+    background: #4CAF50; /* Verde para autenticado */
+    cursor: not-allowed;
   }
   
   .btn-checkin:hover {
