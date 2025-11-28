@@ -22,24 +22,49 @@
     </header>
 
     <main>
+      <div class="fixed-missions">
+        <h2>Missões Fixas</h2>
+        <div class="mission-card">
+          <h3>Siga no X</h3>
+          <p>Recompensa: 5 $BHT</p>
+          <button class="btn-checkin">Completar</button>
+          <div class="photo-upload hidden">
+            <input type="file" accept="image/*" capture="camera">
+            <img class="photo-preview" src="" alt="Preview" style="display:none;">
+          </div>
+        </div>
+        <div class="mission-card">
+          <h3>Siga no Instagram</h3>
+          <p>Recompensa: 5 $BHT</p>
+          <button class="btn-checkin">Completar</button>
+          <div class="photo-upload hidden">
+            <input type="file" accept="image/*" capture="camera">
+            <img class="photo-preview" src="" alt="Preview" style="display:none;">
+          </div>
+        </div>
+        <div class="mission-card">
+          <h3>Entre no grupo Telegram</h3>
+          <p>Recompensa: 5 $BHT</p>
+          <button class="btn-checkin">Completar</button>
+          <div class="photo-upload hidden">
+            <input type="file" accept="image/*" capture="camera">
+            <img class="photo-preview" src="" alt="Preview" style="display:none;">
+          </div>
+        </div>
+        <div class="mission-card">
+          <h3>Marque a gente no Instagram</h3>
+          <p>Recompensa: 5 $BHT</p>
+          <button class="btn-checkin">Completar</button>
+          <div class="photo-upload hidden">
+            <input type="file" accept="image/*" capture="camera">
+            <img class="photo-preview" src="" alt="Preview" style="display:none;">
+          </div>
+        </div>
+      </div>
+
       <div class="missions">
         <h2>Suas Missões Diárias</h2>
-        <div class="mission-card">
-          <h3>Beber 2L de água</h3>
-          <p>Recompensa: 10 $BHT</p>
-          <button class="btn-checkin">Fazer Check-in</button>
-        </div>
-        <div class="mission-card">
-          <h3>Exercício de 30min</h3>
-          <p>Recompensa: 15 $BHT</p>
-          <button class="btn-checkin">Fazer Check-in</button>
-        </div>
-        <div class="mission-card">
-          <h3>Ler 20 páginas</h3>
-          <p>Recompensa: 20 $BHT</p>
-          <button class="btn-checkin">Fazer Check-in</button>
-        </div>
-        <!-- Adicione mais missões aqui -->
+        <div id="dailyMissionsList"></div>
       </div>
     </main>
 
@@ -48,29 +73,6 @@
     </footer>
   </div>
 
-  <script>
-    // Verifica se conectado, senão redireciona
-    const address = localStorage.getItem("connectedAddress");
-    if (!address) {
-      window.location.href = "index.html";
-    } else {
-      document.getElementById("accountAddress").textContent = `${address.slice(0, 6)}...${address.slice(-4)}`;
-    }
-
-    // Botão desconectar
-    document.getElementById("disconnectButton").addEventListener("click", () => {
-      localStorage.removeItem("connectedAddress");
-      window.location.href = "index.html";
-    });
-
-    // Exemplo de check-in (futuro: integrar com contrato)
-    document.querySelectorAll(".btn-checkin").forEach(btn => {
-      btn.addEventListener("click", () => {
-        btn.textContent = "Check-in Feito ✓";
-        btn.disabled = true;
-        btn.style.background = "#4CAF50"; // Verde para concluído
-      });
-    });
-  </script>
+  <script src="js/app.js"></script>
 </body>
 </html>

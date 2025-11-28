@@ -25,7 +25,7 @@
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
-    background: linear-gradient(90deg, #2196F3, #FF9800); /* Azul Vibrante para Laranja Ativo */
+    background: linear-gradient(90deg, #2196F3, #FF9800); /* Azul para Laranja */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -36,7 +36,7 @@
   }
   
   .card {
-    background: rgba(255, 255, 255, 0.95); /* Cinza Claro com opacidade */
+    background: rgba(255, 255, 255, 0.95); /* Claro com opacidade */
     backdrop-filter: blur(12px);
     border-radius: 20px;
     padding: 2.5rem 2rem;
@@ -66,7 +66,7 @@
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4); /* Sombra azul */
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);
   }
   
   .btn-primary:hover {
@@ -139,6 +139,12 @@
     color: #212121; /* Preto Suave */
   }
   
+  .fixed-missions h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #2196F3; /* Azul Vibrante */
+  }
+  
   .mission-card {
     background: #fff;
     border-radius: 16px;
@@ -172,4 +178,20 @@
   
   .btn-checkin:hover {
     background: #1976D2; /* Azul mais escuro */
+  }
+  
+  .photo-upload {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .photo-upload input {
+    margin-bottom: 0.5rem;
+  }
+  
+  .photo-preview {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 8px;
   }
