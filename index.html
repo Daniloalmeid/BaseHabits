@@ -25,6 +25,12 @@
         <button id="connectButton" class="btn-primary">
           Conectar Carteira
         </button>
+
+        <div id="accountInfo" class="account-info hidden">
+          <p>Conectado como:</p>
+          <p id="accountAddress" class="address"></p>
+          <p>Rede: <span id="networkName" class="success">Base Mainnet</span></p>
+        </div>
       </div>
     </main>
 
@@ -33,10 +39,10 @@
     </footer>
   </div>
 
-  <!-- Ethers.js v6 -->
-  <script src="https://cdn.ethers.io/lib/ethers-6.7.1.umd.min.js" type="text/javascript"></script>
+  <!-- Ethers.js v6 (domínio corrigido para .org) -->
+  <script src="https://cdn.ethers.org/lib/ethers-6.13.1.umd.min.js" type="text/javascript"></script>
   
-  <!-- WalletConnect v2 (atualizado para UMD minified para evitar erros) -->
+  <!-- WalletConnect v2 (UMD minified para evitar erros de definição) -->
   <script src="https://unpkg.com/@walletconnect/universal-provider@2.14.0/dist/umd/index.min.js"></script>
   <script src="https://unpkg.com/@walletconnect/ethereum-provider@2.14.0/dist/umd/index.min.js"></script>
   

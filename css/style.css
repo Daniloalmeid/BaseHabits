@@ -25,7 +25,7 @@
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
-    background: linear-gradient(90deg, #2196F3, #FF9800); /* Azul para Laranja */
+    background: linear-gradient(90deg, #2196F3, #FF9800); /* Azul Vibrante para Laranja Ativo */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -36,7 +36,7 @@
   }
   
   .card {
-    background: rgba(255, 255, 255, 0.95); /* Claro com opacidade */
+    background: rgba(255, 255, 255, 0.95); /* Cinza Claro com opacidade */
     backdrop-filter: blur(12px);
     border-radius: 20px;
     padding: 2.5rem 2rem;
@@ -66,13 +66,54 @@
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4); /* Sombra azul */
   }
   
   .btn-primary:hover {
     background: #1976D2; /* Azul mais escuro */
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(33, 150, 243, 0.6);
+  }
+  
+  .account-info {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(245, 245, 245, 0.8); /* Cinza Claro */
+    border-radius: 16px;
+    border: 1px solid #9E9E9E; /* Cinza Médio */
+  }
+  
+  .address {
+    font-family: monospace;
+    font-size: 1.1rem;
+    word-break: break-all;
+    margin: 0.8rem 0;
+    font-weight: 500;
+    color: #212121; /* Preto Suave */
+  }
+  
+  .success {
+    color: #00ff9d;
+    font-weight: 600;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  footer {
+    margin-top: 4rem;
+    color: #9E9E9E; /* Cinza Médio */
+    font-size: 0.9rem;
+  }
+  
+  /* Estilos para daily-missions.html */
+  .user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
   }
   
   .btn-disconnect {
@@ -85,7 +126,6 @@
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s;
-    margin-left: 1rem;
   }
   
   .btn-disconnect:hover {
@@ -93,25 +133,10 @@
     transform: translateY(-3px);
   }
   
-  .user-info {
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-    justify-content: center;
-  }
-  
-  .address {
-    font-family: monospace;
-    font-size: 1.1rem;
+  .missions h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     color: #212121; /* Preto Suave */
-    background: #F5F5F5; /* Cinza Claro */
-    padding: 8px 16px;
-    border-radius: 50px;
-    border: 1px solid #9E9E9E; /* Cinza Médio */
-  }
-  
-  .missions {
-    margin-top: 3rem;
   }
   
   .mission-card {
@@ -125,11 +150,12 @@
   .mission-card h3 {
     font-size: 1.4rem;
     color: #212121; /* Preto Suave */
+    margin-bottom: 0.5rem;
   }
   
   .mission-card p {
     color: #9E9E9E; /* Cinza Médio */
-    margin: 0.5rem 0;
+    margin-bottom: 1rem;
   }
   
   .btn-checkin {
@@ -145,11 +171,5 @@
   }
   
   .btn-checkin:hover {
-    background: #1976D2;
-  }
-  
-  footer {
-    margin-top: 4rem;
-    color: #9E9E9E; /* Cinza Médio */
-    font-size: 0.9rem;
+    background: #1976D2; /* Azul mais escuro */
   }
