@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BaseHabits - Missões Diárias</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" href="https://base.org/favicons/favicon-32x32.png">
 </head>
 <body>
   <div class="container">
     <header>
       <div class="logo">
-        <h1>BaseHabits - Missões Diárias</h1>
-        <span class="tagline">Registre seus hábitos e ganhe $BHT</span>
+        <h1>BaseHabits</h1>
+        <span class="tagline">Construa hábitos. Ganhe $BHT na Base</span>
       </div>
       <div class="user-info">
         <span id="accountAddress" class="address"></span>
@@ -24,47 +24,49 @@
     <main>
       <div class="fixed-missions">
         <h2>Missões Fixas</h2>
-        <div class="mission-card" data-key="fixed-siga-x">
-          <h3>Siga no X</h3>
-          <p>Recompensa: 5 $BHT</p>
-          <button class="btn-checkin">Completar</button>
-          <div class="photo-upload hidden">
-            <input type="file" accept="image/*" capture="camera">
-            <img class="photo-preview" src="" alt="Preview" style="display:none;">
+        <div class="missions-grid">
+          <div class="mission-card" data-key="fixed-siga-x">
+            <h3>Siga no X</h3>
+            <p>Recompensa: 5 $BHT</p>
+            <button class="btn-checkin">Completar</button>
+            <div class="photo-upload hidden">
+              <input type="file" accept="image/*" capture="camera">
+              <img class="photo-preview" src="" alt="Preview" style="display:none;">
+            </div>
           </div>
-        </div>
-        <div class="mission-card" data-key="fixed-siga-instagram">
-          <h3>Siga no Instagram</h3>
-          <p>Recompensa: 5 $BHT</p>
-          <button class="btn-checkin">Completar</button>
-          <div class="photo-upload hidden">
-            <input type="file" accept="image/*" capture="camera">
-            <img class="photo-preview" src="" alt="Preview" style="display:none;">
+          <div class="mission-card" data-key="fixed-siga-instagram">
+            <h3>Siga no Instagram</h3>
+            <p>Recompensa: 5 $BHT</p>
+            <button class="btn-checkin">Completar</button>
+            <div class="photo-upload hidden">
+              <input type="file" accept="image/*" capture="camera">
+              <img class="photo-preview" src="" alt="Preview" style="display:none;">
+            </div>
           </div>
-        </div>
-        <div class="mission-card" data-key="fixed-grupo-telegram">
-          <h3>Entre no grupo Telegram</h3>
-          <p>Recompensa: 5 $BHT</p>
-          <button class="btn-checkin">Completar</button>
-          <div class="photo-upload hidden">
-            <input type="file" accept="image/*" capture="camera">
-            <img class="photo-preview" src="" alt="Preview" style="display:none;">
+          <div class="mission-card" data-key="fixed-grupo-telegram">
+            <h3>Entre no grupo Telegram</h3>
+            <p>Recompensa: 5 $BHT</p>
+            <button class="btn-checkin">Completar</button>
+            <div class="photo-upload hidden">
+              <input type="file" accept="image/*" capture="camera">
+              <img class="photo-preview" src="" alt="Preview" style="display:none;">
+            </div>
           </div>
-        </div>
-        <div class="mission-card" data-key="fixed-marque-instagram">
-          <h3>Marque a gente no Instagram</h3>
-          <p>Recompensa: 5 $BHT</p>
-          <button class="btn-checkin">Completar</button>
-          <div class="photo-upload hidden">
-            <input type="file" accept="image/*" capture="camera">
-            <img class="photo-preview" src="" alt="Preview" style="display:none;">
+          <div class="mission-card" data-key="fixed-marque-instagram">
+            <h3>Marque a gente no Instagram</h3>
+            <p>Recompensa: 5 $BHT</p>
+            <button class="btn-checkin">Completar</button>
+            <div class="photo-upload hidden">
+              <input type="file" accept="image/*" capture="camera">
+              <img class="photo-preview" src="" alt="Preview" style="display:none;">
+            </div>
           </div>
         </div>
       </div>
 
       <div class="missions">
         <h2>Suas Missões Diárias</h2>
-        <div id="dailyMissionsList"></div>
+        <div id="dailyMissionsList" class="missions-grid"></div>
       </div>
     </main>
 
