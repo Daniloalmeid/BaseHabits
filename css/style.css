@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #F5F5F5; /* Cinza Claro */
+    color: #212121; /* Preto Suave */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 480px;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .logo h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #2196F3, #FF9800); /* Azul para Laranja */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .tagline {
+    font-size: 1.1rem;
+    color: #9E9E9E; /* Cinza Médio */
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.95); /* Claro com opacidade */
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    margin-top: 3rem;
+    border: 1px solid rgba(158, 158, 158, 0.2); /* Cinza Médio claro */
+  }
+  
+  .card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #212121; /* Preto Suave */
+  }
+  
+  .card p {
+    color: #9E9E9E; /* Cinza Médio */
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-primary {
+    background: #2196F3; /* Azul Vibrante */
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);
+  }
+  
+  .btn-primary:hover {
+    background: #1976D2; /* Azul mais escuro */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(33, 150, 243, 0.6);
+  }
+  
+  .btn-disconnect {
+    background: #FF9800; /* Laranja Ativo */
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-left: 1rem;
+  }
+  
+  .btn-disconnect:hover {
+    background: #F57C00; /* Laranja mais escuro */
+    transform: translateY(-3px);
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  
+  .address {
+    font-family: monospace;
+    font-size: 1.1rem;
+    color: #212121; /* Preto Suave */
+    background: #F5F5F5; /* Cinza Claro */
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: 1px solid #9E9E9E; /* Cinza Médio */
+  }
+  
+  .missions {
+    margin-top: 3rem;
+  }
+  
+  .mission-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mission-card h3 {
+    font-size: 1.4rem;
+    color: #212121; /* Preto Suave */
+  }
+  
+  .mission-card p {
+    color: #9E9E9E; /* Cinza Médio */
+    margin: 0.5rem 0;
+  }
+  
+  .btn-checkin {
+    background: #2196F3; /* Azul Vibrante */
+    color: #fff;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s;
+  }
+  
+  .btn-checkin:hover {
+    background: #1976D2;
+  }
+  
+  footer {
+    margin-top: 4rem;
+    color: #9E9E9E; /* Cinza Médio */
+    font-size: 0.9rem;
+  }

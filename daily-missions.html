@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BaseHabits - Missões Diárias</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://base.org/favicons/favicon-32x32.png">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <h1>BaseHabits - Missões Diárias</h1>
+        <span class="tagline">Registre seus hábitos e ganhe $BHT</span>
+      </div>
+      <div class="user-info">
+        <span id="accountAddress" class="address"></span>
+        <button id="disconnectButton" class="btn-disconnect">Desconectar</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="missions">
+        <h2>Suas Missões Diárias</h2>
+        <div class="mission-card">
+          <h3>Beber 2L de água</h3>
+          <p>Recompensa: 10 $BHT</p>
+          <button class="btn-checkin">Fazer Check-in</button>
+        </div>
+        <div class="mission-card">
+          <h3>Exercício de 30min</h3>
+          <p>Recompensa: 15 $BHT</p>
+          <button class="btn-checkin">Fazer Check-in</button>
+        </div>
+        <div class="mission-card">
+          <h3>Ler 20 páginas</h3>
+          <p>Recompensa: 20 $BHT</p>
+          <button class="btn-checkin">Fazer Check-in</button>
+        </div>
+        <!-- Adicione mais missões aqui -->
+      </div>
+    </main>
+
+    <footer>
+      <p>BaseHabits © 2025 • Token $BHT • Powered by <strong>Base</strong></p>
+    </footer>
+  </div>
+
+  <script>
+    // Verifica se conectado, senão redireciona
+    const address = localStorage.getItem("connectedAddress");
+    if (!address) {
+      window.location.href = "index.html";
+    } else {
+      document.getElementById("accountAddress").textContent = `${address.slice(0, 6)}...${address.slice(-4)}`;
+    }
+
+    // Botão desconectar
+    document.getElementById("disconnectButton").addEventListener("click", () => {
+      localStorage.removeItem("connectedAddress");
+      window.location.href = "index.html";
+    });
+
+    // Exemplo de check-in (futuro: integrar com contrato)
+    document.querySelectorAll(".btn-checkin").forEach(btn => {
+      btn.addEventListener("click", () => {
+        btn.textContent = "Check-in Feito ✓";
+        btn.disabled = true;
+        btn.style.background = "#4CAF50"; // Verde para concluído
+      });
+    });
+  </script>
+</body>
+</html>
